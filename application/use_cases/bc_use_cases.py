@@ -19,6 +19,12 @@ class BCUseCases:
         """
         return self.bc_repository.get_entities()
 
+    def get_companies(self) -> Dict[str, Any]:
+        """
+        Devuelve el JSON de las empresas en BC.
+        """
+        return self.bc_repository.get_companies()
+
     def get_customers(self) -> Dict[str, Any]:
         """
         Devuelve el JSON de clientes en BC.
